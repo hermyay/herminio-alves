@@ -1,0 +1,143 @@
+/* RESET */
+*{
+    margin: 0; padding: 0; font-size: 100%; box-sizing: border-box; font-family: 'Comfortaa', cursive;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none; cursor: pointer; opacity: 0.9;
+}
+a:hover{
+    opacity: 1;
+}
+
+/* HEADER */
+header{
+    width: 100%; position: absolute; top: 0; left: 0; display: flex; justify-content: space-between; background-color: rgb(172, 151, 81); align-items: center;; padding: 20px 50px;
+}
+
+header ul{
+    display: flex;
+}
+header li{
+    margin: 0 15px;
+}
+header li:first-child{
+    margin-left: 0;
+}
+header li:last-child{
+    margin-right: 0;
+}
+header li a{
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 700px) {
+    header{
+        flex-direction: column;
+    }
+    header img{
+        margin-bottom: 15px;
+    }
+}
+
+/* TEXTO */
+.text{
+    display: flex; flex-direction: column; align-items: center; padding: 100px 50px; color: rgb(53, 52, 52); margin-top: 50px;
+}
+.text h3{
+    font-size: 2rem; margin-bottom: 20px; color: rgb(53, 52, 52); text-align: center;
+}
+.text hr{
+    width: 200px; height: 2px; background-color: rgb(172, 151, 81); margin-bottom: 70px; border: none;
+}
+.text .grid p{
+    max-width: 100%; color: rgb(53, 52, 52); font-size: 1rem; text-align: justify; text-indent: 15px; margin-left: 100px; margin-right: 100px; padding: 10px 0; word-wrap: break-word;
+}
+@media (max-width: 900px) {
+    .text .grid p{
+        margin-left: 20px; margin-right: 20px;
+    }
+}
+/* TEXTOS */
+.textos{
+    background-color: rgb(226, 199, 110); display: flex; flex-direction: column; align-items: center; padding: 100px 50px; text-align: center; color: rgb(53, 52, 52);
+}
+.textos h3{
+    font-size: 2rem; margin-bottom: 20px; color: rgb(53, 52, 52);
+}
+.textos p{
+    max-width: 800px; margin-bottom: 35px; color: rgb(53, 52, 52);
+}
+.textos hr{
+    width: 200px; height: 2px; background-color: rgb(53, 52, 52); margin-bottom: 70px; border: none;
+}
+.textos .grid{
+    width: 100%; display: flex;
+}
+.textos .grid li{
+    padding: 0 30px;
+}
+.textos .grid li h4{
+    font-size: 1.5rem; margin-bottom: 30px;
+}
+.textos .grid li h4 a{
+    color: rgb(53, 52, 52);
+}
+
+@media (max-width: 850px) {
+    .textos .grid{
+        flex-direction: column;
+    }
+}
+
+/* NEWSLETTER */
+.newsletter{
+    display: flex; flex-direction: column; text-align: center; padding: 100px 50px; align-items: center;
+}
+.newsletter h3{
+    font-size: 2rem; margin-bottom: 20px; color: rgb(53, 52, 52);
+}
+.newsletter p{
+    max-width: 800px; margin-bottom: 35px; color: rgb(53, 52, 52); margin-top: 20px;
+}
+.newsletter hr{
+    width: 200px; height: 2px; background-color: rgb(53, 52, 52); margin-bottom: 70px; border: none;
+}
+.newsletter form{
+    display: flex; justify-content: center; flex-wrap: wrap; width: 80%; max-width: 800px;
+}
+.newsletter input{
+    padding: 15px; border: 1px solid rgba(226, 199, 110, 0.733); border-radius: 5px; margin-right: 15px; flex: 1;
+}
+.newsletter button{
+    padding: 15px; background-color: rgb(226, 199, 110); color: rgb(53, 52, 52); text-transform: uppercase; border: none; border-radius: 5px;
+cursor: pointer;}
+@media (max-width: 850px) {
+    .newsletter input{
+        flex-basis: 100%; margin-bottom: 15px;
+    }
+}
+
+/* FOOTER */
+footer{
+    display: flex; flex-direction: column; background-color: rgb(172, 151, 81); padding: 50px 0px; align-items: center; margin-bottom: 15px;
+}
+footer ul{
+    display: flex; margin-bottom: 25px;
+}
+footer ul li{
+    margin-right: 40px;
+}
+footer ul li:last-child{
+    margin-right: 0;
+}
+footer ul li a{
+    color: rgb(53, 52, 52); font-size: 1.5rem;
+}
+footer p{
+    color: rgb(53, 52, 52);
+}
